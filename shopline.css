@@ -10,6 +10,8 @@
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    position: fixed;
+
 }
 .first a{
     text-decoration: none;
@@ -40,7 +42,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
 
 }
 ul li{
