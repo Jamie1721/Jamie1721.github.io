@@ -1,0 +1,540 @@
+.controlFun{
+    width: 1050px;
+    height: 884px;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+}
+.controlFun .point{
+    width: 750px;
+    height: 466px;
+    top: 150px;
+    right: 100px;
+    bottom: 268px;
+    left: 200px;
+    /* padding: 225px 150px 402px 300px; */
+    position: absolute;
+    z-index: 2;
+}
+.controlFun .item{
+    width: 750px;
+    height: 466px;
+}
+.controlFun .video{
+    display: flex;
+    width: 750px;
+    height: 466px;
+
+}
+.controlFun .tag{
+    position:absolute;
+    top: 50%;
+    right: -1%;
+}
+.controlFun .function{
+    width: 380px;
+    height: 420px;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 3;
+}
+.function-name{
+    height: 150px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 65px;
+    flex-direction: row;
+    align-items: center;
+}
+.function-name h1{
+    color: white;
+}
+.function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.function-content{
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.controlFun .bgc{
+    width: 486px;
+    height: 310px;
+    background-color: #eeeeee;
+    position: relative;
+    z-index: 1;
+    top: -374px;
+    left: 564px;
+    z-index: 0;
+}
+.controlFun .illustrate{
+    background-color: #efefef;
+    width: 720px;
+    height: 280px;
+    line-height: 2em;
+    padding: 10px;
+    position: relative;
+    top: -146px;
+    left: 60px;
+    z-index: 3;
+}
+.controlFun .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.controlFun .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.securityGuard{
+    width: 1050px;
+    height: 884px;
+    background-color: white;
+    margin: 100px auto;
+    position: relative;
+}
+.securityGuard .point{
+    width: 750px;
+    height: 466px;
+    top: 150px;
+    right: 280px;
+    bottom: 268px;
+    left: 20px;
+    position: absolute;
+    z-index: 2;
+}
+.securityGuard .item{
+    width: 750px;
+    height: 466px;
+}
+.securityGuard .video{
+    width: 750px;
+    height: 466px;
+}
+.securityGuard .tag{
+    position:absolute;
+    top: 50%;
+    left: -1%;
+}
+.securityGuard .function{
+    width: 380px;
+    height: 420px;
+    background-color:rosybrown ;
+    position: relative;
+    right: -670px;
+    z-index: 3;
+}
+.securityGuard .function-name{
+    height: 150px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 65px;
+    flex-direction: row;
+    align-items: center;
+}
+.securityGuard .function-name h1{
+    color: white;
+}
+.securityGuard .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.securityGuard .function-content{
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.securityGuard .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+
+.securityGuard .bgc{
+    width: 560px;
+    height: 450px;
+    background-color: #eeeeee;
+    position: relative;
+    left: 310px;
+    top: -330px;
+    z-index: 0;
+}
+.securityGuard .illustrate{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    padding: 10px;
+    width: 720px;
+    height: 170px;
+    background-color: #efefef;
+    position: relative;
+    top: -290px;
+    right: -310px;
+    z-index: 3;
+}
+.securityGuard .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+
+}
+.securityGuard .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.comfortableRide{
+    width: 1050px;
+    height: 884px;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+}
+.comfortableRide .point{
+    width: 750px;
+    height: 466px;
+    top: 150px;
+    right: 100px;
+    bottom: 268px;
+    left: 200px;
+    /* padding: 225px 150px 402px 300px; */
+    position: absolute;
+    z-index: 2;
+}
+.comfortableRide .item{
+    width: 750px;
+    height: 466px;
+}
+.comfortableRide .video{
+    display: flex;
+    width: 750px;
+    height: 466px;
+
+}
+.comfortableRide .tag{
+    position:absolute;
+    top: 50%;
+    right: -1%;
+}
+.comfortableRide .function{
+    width: 380px;
+    height: 420px;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 3;
+}
+.comfortableRide .function-name{
+    height: 150px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 65px;
+    flex-direction: row;
+    align-items: center;
+}
+.comfortableRide .function-name h1{
+    color: white;
+}
+.comfortableRide .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.comfortableRide .function-content{
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.comfortableRide .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.comfortableRide .bgc{
+    width: 486px;
+    height: 310px;
+    background-color: #eeeeee;
+    position: relative;
+    z-index: 1;
+    top: -374px;
+    left: 564px;
+    z-index: 0;
+}
+.comfortableRide .illustrate{
+    background-color: #efefef;
+    width: 720px;
+    height: 280px;
+    line-height: 2em;
+    padding: 10px;
+    position: relative;
+    top: -146px;
+    left: 60px;
+    z-index: 3;
+}
+.comfortableRide .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.comfortableRide .illustrate h3{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.humanize{
+    width: 1050px;
+    height: 884px;
+    background-color: white;
+    margin: 100px auto;
+    position: relative;
+}
+.humanize .point{
+    width: 750px;
+    height: 466px;
+    top: 150px;
+    right: 280px;
+    bottom: 268px;
+    left: 20px;
+    position: absolute;
+    z-index: 2;
+}
+.humanize .item{
+    width: 750px;
+    height: 466px;
+}
+.humanize .video{
+    width: 750px;
+    height: 466px;
+}
+.humanize .tag{
+    position:absolute;
+    top: 50%;
+    left: -1%;
+}
+.humanize .function{
+    width: 380px;
+    height: 420px;
+    background-color:rosybrown ;
+    position: relative;
+    right: -670px;
+    z-index: 3;
+}
+.humanize .function-name{
+    height: 150px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 65px;
+    flex-direction: row;
+    align-items: center;
+}
+.humanize .function-name h1{
+    color: white;
+}
+.humanize .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.humanize .function-content{
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.humanize .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+
+.humanize .bgc{
+    width: 560px;
+    height: 450px;
+    background-color: #eeeeee;
+    position: relative;
+    left: 310px;
+    top: -330px;
+    z-index: 0;
+}
+.humanize .illustrate{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    padding: 10px;
+    width: 720px;
+    height: 170px;
+    background-color: #efefef;
+    position: relative;
+    top: -290px;
+    right: -310px;
+    z-index: 3;
+}
+.humanize .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+
+}
+.humanize .illustrate h3{
+    display: flex;
+    width: 130px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.proud{
+    width: 1050px;
+    height: 884px;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+}
+.proud .point{
+    width: 750px;
+    height: 466px;
+    top: 150px;
+    right: 100px;
+    bottom: 268px;
+    left: 200px;
+    /* padding: 225px 150px 402px 300px; */
+    position: absolute;
+    z-index: 2;
+}
+.proud .item{
+    width: 750px;
+    height: 466px;
+}
+.proud .video{
+    display: flex;
+    width: 750px;
+    height: 466px;
+
+}
+.proud .tag{
+    position:absolute;
+    top: 50%;
+    right: -1%;
+}
+.proud .function{
+    width: 380px;
+    height: 420px;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 3;
+}
+.proud .function-name{
+    height: 150px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 65px;
+    flex-direction: row;
+    align-items: center;
+}
+.proud .function-name h1{
+    color: white;
+}
+.proud .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.proud .function-content{
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.proud .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.proud .bgc{
+    width: 486px;
+    height: 310px;
+    background-color: #eeeeee;
+    position: relative;
+    z-index: 1;
+    top: -374px;
+    left: 564px;
+    z-index: 0;
+}
+.proud .illustrate{
+    background-color: #efefef;
+    width: 720px;
+    height: 200px;
+    line-height: 2em;
+    padding: 10px;
+    position: relative;
+    top: -146px;
+    left: 60px;
+    z-index: 3;
+}
+.proud .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.proud .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+
