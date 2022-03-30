@@ -1,0 +1,508 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controlFun{
+    width: 1020px;
+    height: 1020px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(17,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.controlFun .point{
+    grid-column: 4/16;
+    grid-row: 4/14;
+}
+.controlFun .point .video{
+    width: 720px;
+    height: 510px;
+}
+.controlFun .point .video .item{
+    width: 720px;
+    height: 510px;
+}
+.controlFun .function{
+    width: 360px;
+    height: 408px;
+    grid-column: 1/7;
+    grid-row: 1/9;
+}
+.controlFun .function-name{
+    height: 153px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 60px;
+    flex-direction: row;
+    align-items: center;
+}
+.controlFun .function-name h1{
+    color: white;
+}
+.controlFun .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.controlFun .function-content{
+    height: 235px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.controlFun .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.controlFun .bgc{
+    background-color: #eeeeee;
+    grid-column: 10/17;
+    grid-row: 2/8;
+}
+.controlFun .illustrate{
+    width: 640px;
+    height: 337px;
+    background-color: #efefef;
+    grid-column: 2/13;
+    grid-row: 13/20;
+    line-height: 2em;
+    padding: 10px;
+}
+.controlFun .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.controlFun .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.controlFun .tag{
+    grid-column: 15/16;
+    grid-row: 9/10;
+    margin-left: 10px;
+}
+.controlFun .tag a{
+    width: 60px;
+    height: 51px;
+}
+.controlFun .tag img{
+    width: 60px;
+    height: 51px;
+}
+
+.securityGuard{
+    width: 1020px;
+    height: 1020px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(17,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.securityGuard .point{
+    grid-column: 2/14;
+    grid-row: 4/14;
+}
+.securityGuard .point .video{
+    width: 720px;
+    height: 510px;
+}
+.securityGuard .point .video .item{
+    width: 720px;
+    height: 510px;
+}
+.securityGuard .function{
+    width: 370px;
+    height: 408px;
+    grid-column: 12/18;
+    grid-row: 1/9;
+}
+.securityGuard .function-name{
+    height: 168px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 60px;
+    flex-direction: row;
+    align-items: center;
+}
+.securityGuard .function-name h1{
+    color: white;
+}
+.securityGuard .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.securityGuard .function-content{
+    height: 220px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.securityGuard .function-content span{
+    display: flex;
+    font-size: x-large;
+    font-weight: 400px;
+    line-height: 2em;
+}
+.securityGuard .bgc{
+    background-color: #eeeeee;
+    grid-column: 7/16;
+    grid-row: 2/12;
+}
+.securityGuard .illustrate{
+    width: 720px;
+    height: 255px;
+    background-color: #efefef;
+    grid-column: 6/18;
+    grid-row: 13/18;
+    line-height: 2em;
+    padding: 10px;
+}
+.securityGuard .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.securityGuard .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.securityGuard .tag{
+    grid-column: 2/3;
+    grid-row: 9/10;
+    margin-left:-10px;
+}
+.securityGuard .tag a{
+    width: 60px;
+    height: 51px;
+}
+.securityGuard .tag img{
+    width: 60px;
+    height: 51px;
+}
+.comfortableRide{
+    width: 1020px;
+    height: 1020px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(17,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.comfortableRide .point{
+    grid-column: 4/16;
+    grid-row: 4/14;
+}
+.comfortableRide .point .video{
+    width: 720px;
+    height: 510px;
+}
+.comfortableRide .point .video .item{
+    width: 720px;
+    height: 510px;
+}
+.comfortableRide .function{
+    width: 360px;
+    height: 408px;
+    grid-column: 1/7;
+    grid-row: 1/9;
+}
+.comfortableRide .function-name{
+    height: 153px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 60px;
+    flex-direction: row;
+    align-items: center;
+}
+.comfortableRide .function-name h1{
+    color: white;
+}
+.comfortableRide .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.comfortableRide .function-content{
+    height: 235px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.comfortableRide .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.comfortableRide .bgc{
+    background-color: #eeeeee;
+    grid-column: 10/17;
+    grid-row: 2/8;
+}
+.comfortableRide .illustrate{
+    width: 640px;
+    height: 337px;
+    background-color: #efefef;
+    grid-column: 2/13;
+    grid-row: 13/20;
+    line-height: 2em;
+    padding: 10px;
+}
+.comfortableRide .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.comfortableRide .illustrate h3{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.comfortableRide .tag{
+    grid-column: 15/16;
+    grid-row: 9/10;
+    margin-left: 10px;
+}
+.comfortableRide .tag a{
+    width: 60px;
+    height: 51px;
+}
+.comfortableRide .tag img{
+    width: 60px;
+    height: 51px;
+}
+.humanize{
+    width: 1020px;
+    height: 1020px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(17,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.humanize .point{
+    grid-column: 2/14;
+    grid-row: 4/14;
+}
+.humanize .point .video{
+    width: 720px;
+    height: 510px;
+}
+.humanize .point .video .item{
+    width: 720px;
+    height: 510px;
+}
+.humanize .function{
+    width: 370px;
+    height: 408px;
+    grid-column: 12/18;
+    grid-row: 1/9;
+}
+.humanize .function-name{
+    height: 168px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 60px;
+    flex-direction: row;
+    align-items: center;
+}
+.humanize .function-name h1{
+    color: white;
+}
+.humanize .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.humanize .function-content{
+    height: 220px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.humanize .function-content span{
+    display: flex;
+    font-size: x-large;
+    font-weight: 400px;
+    line-height: 2em;
+}
+.humanize .bgc{
+    background-color: #eeeeee;
+    grid-column: 7/16;
+    grid-row: 2/12;
+}
+.humanize .illustrate{
+    width: 720px;
+    height: 255px;
+    background-color: #efefef;
+    grid-column: 6/18;
+    grid-row: 13/18;
+    line-height: 2em;
+    padding: 10px;
+}
+.humanize .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.humanize .illustrate h3{
+    display: flex;
+    width: 130px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.humanize .tag{
+    grid-column: 2/3;
+    grid-row: 9/10;
+    margin-left:-10px;
+}
+.humanize .tag a{
+    width: 60px;
+    height: 51px;
+}
+.humanize .tag img{
+    width: 60px;
+    height: 51px;
+}
+.proud{
+    width: 1020px;
+    height: 1020px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(17,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.proud .point{
+    grid-column: 4/16;
+    grid-row: 4/14;
+}
+.proud .point .video{
+    width: 720px;
+    height: 510px;
+}
+.proud .point .video .item{
+    width: 720px;
+    height: 510px;
+}
+.proud .function{
+    width: 360px;
+    height: 408px;
+    grid-column: 1/7;
+    grid-row: 1/9;
+}
+.proud .function-name{
+    height: 153px;
+    background-color: #ae0014;
+    display: flex;
+    font-size: 60px;
+    flex-direction: row;
+    align-items: center;
+}
+.proud .function-name h1{
+    color: white;
+}
+.proud .function-name .number{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 120px;
+    color: white;
+}
+.proud .function-content{
+    height: 235px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.proud .function-content span{
+    display: flex;
+    font-size: xx-large;
+    font-weight: 400px;
+    line-height: 1.5em;
+}
+.proud .bgc{
+    background-color: #eeeeee;
+    grid-column: 10/17;
+    grid-row: 2/8;
+}
+.proud .illustrate{
+    width: 640px;
+    height: auto;
+    background-color: #efefef;
+    grid-column: 2/13;
+    grid-row: 13/18;
+    line-height: 2em;
+    padding: 10px;
+}
+.proud .illustrate h2{
+    font-size: x-large;
+    font-weight:900;
+    color: #bb0404;
+    line-height: 1.5em;
+}
+.proud .illustrate h3{
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.proud .tag{
+    grid-column: 15/16;
+    grid-row: 9/10;
+    margin-left: 10px;
+}
+.proud .tag a{
+    width: 60px;
+    height: 51px;
+}
+.proud .tag img{
+    width: 60px;
+    height: 51px;
+}
+
+
+
+
+
+
+
