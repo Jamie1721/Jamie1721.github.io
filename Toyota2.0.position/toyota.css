@@ -58,18 +58,20 @@
     font-size: 120px;
     color: white;
 }
+.function h2{
+    display: flex;
+    font-size: x-large;
+    color: white;
+    padding: 10px 10px 0 10px;
+    line-height: 1.5em;
+    background-color: black;
+}
 .function-content{
-    height: 250px;
+    height: 204px;
     background-color: black;
     color: white;
     font-size: larger;
     padding: 10px;
-    line-height: 1.5em;
-}
-.function-content span{
-    display: flex;
-    font-size: xx-large;
-    font-weight: 400px;
     line-height: 1.5em;
 }
 .controlFun .bgc{
@@ -93,13 +95,13 @@
     left: 60px;
     z-index: 3;
 }
-.controlFun .illustrate h2{
+.controlFun .illustrate div{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 }
-.controlFun .illustrate h2::after{
+.controlFun .illustrate div::after{
     content: '';
     width: 62%;
     display: inline-block;
@@ -190,18 +192,21 @@
     color: white;
 }
 .securityGuard .function-content{
-    height: 250px;
+    height: 204px;
     background-color: black;
     color: white;
     font-size: larger;
     padding: 10px;
     line-height: 1.5em;
 }
-.securityGuard .function-content span{
-    display: flex;
-    font-size: xx-large;
-    font-weight: 400px;
+.securityGuard .function h2{
+    font-size: x-large;
     line-height: 1.5em;
+    color: white;
+    padding: 10px 10px 0 10px;
+    line-height: 1.5em;
+    background-color: black;
+
 }
 
 .securityGuard .bgc{
@@ -225,14 +230,14 @@
     right: -310px;
     z-index: 3;
 }
-.securityGuard .illustrate h2{
+.securityGuard .illustrate div{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 
 }
-.securityGuard .illustrate h2::after{
+.securityGuard .illustrate div::after{
     content: '';
     width: 62%;
     display: inline-block;
@@ -327,18 +332,21 @@
     color: white;
 }
 .comfortableRide .function-content{
-    height: 250px;
+    height: 204px;
     background-color: black;
     color: white;
     font-size: larger;
     padding: 10px;
     line-height: 1.5em;
 }
-.comfortableRide .function-content span{
-    display: flex;
-    font-size: xx-large;
-    font-weight: 400px;
+.comfortableRide .function h2{
+    font-size: x-large;
     line-height: 1.5em;
+    color: white;
+    padding: 10px 10px 0 10px;
+    line-height: 1.5em;
+    background-color: black;
+
 }
 .comfortableRide .bgc{
     width: 486px;
@@ -362,13 +370,13 @@
     z-index: 3;
 }
 
-.comfortableRide .illustrate h2{
+.comfortableRide .illustrate div{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 }
-.comfortableRide .illustrate h2::after{
+.comfortableRide .illustrate div::after{
     content: '';
     width: 62%;
     display: inline-block;
@@ -460,18 +468,21 @@
     color: white;
 }
 .humanize .function-content{
-    height: 250px;
+    height: 204px;
     background-color: black;
     color: white;
     font-size: larger;
     padding: 10px;
     line-height: 1.5em;
 }
-.humanize .function-content span{
-    display: flex;
-    font-size: xx-large;
-    font-weight: 400px;
+.humanize .function h2{
+    font-size: x-large;
     line-height: 1.5em;
+    color: white;
+    padding: 10px 10px 0 10px;
+    line-height: 1.5em;
+    background-color: black;
+
 }
 
 .humanize .bgc{
@@ -495,14 +506,14 @@
     right: -310px;
     z-index: 3;
 }
-.humanize .illustrate h2{
+.humanize .illustrate div{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 
 }
-.humanize .illustrate h2::after{
+.humanize .illustrate div::after{
     content: '';
     width: 62%;
     display: inline-block;
@@ -596,18 +607,21 @@
     color: white;
 }
 .proud .function-content{
-    height: 250px;
+    height: 204px;
     background-color: black;
     color: white;
     font-size: larger;
     padding: 10px;
     line-height: 1.5em;
 }
-.proud .function-content span{
-    display: flex;
-    font-size: xx-large;
-    font-weight: 400px;
+.proud .function h2{
+    font-size: x-large;
     line-height: 1.5em;
+    color: white;
+    padding: 10px 10px 0 10px;
+    line-height: 1.5em;
+    background-color: black;
+
 }
 .proud .bgc{
     width: 486px;
@@ -630,13 +644,13 @@
     left: 60px;
     z-index: 3;
 }
-.proud .illustrate h2{
+.proud .illustrate div{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 }
-.proud .illustrate h2::after{
+.proud .illustrate div::after{
     content: '';
     width: 62%;
     display: inline-block;
