@@ -5,7 +5,7 @@
     margin: 50px auto;
     position: relative;
 }
-.controlFun .point{
+.controlFun .showVideo{
     width: 750px;
     height: 466px;
     top: 150px;
@@ -30,6 +30,9 @@
     position:absolute;
     top: 50%;
     right: -1%;
+}
+.controlFun .tag a{
+    display: inline-block;
 }
 .controlFun .function{
     width: 380px;
@@ -83,7 +86,7 @@
     background-color: #efefef;
     width: 720px;
     height: 280px;
-    line-height: 2em;
+    line-height: 1.5em;
     padding: 10px;
     position: relative;
     top: -146px;
@@ -96,14 +99,37 @@
     color: #bb0404;
     line-height: 1.5em;
 }
+.controlFun .illustrate h2::after{
+    content: '';
+    width: 62%;
+    display: inline-block;
+    border-top: 2px solid #bb0404;
+    position: relative;
+    top:-5px;
+    right: -10px;
+}
 .controlFun .illustrate h3{
-    display: flex;
-    width: 110px;
+    display: inline-block;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 2px;
+    padding: 2px;
+    line-height: 30px;
     background-color: black;
     color: white;
+}
+.controlFun .illustrate p{
+    text-indent: 1em;
+}
+.controlFun .illustrate p::before{
+    content: '';
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    width: 0.2em;
+    height: 0.2em;
+    top:-0.3em;
+    left: -0.5em;
 }
 .securityGuard{
     width: 1050px;
@@ -112,7 +138,7 @@
     margin: 100px auto;
     position: relative;
 }
-.securityGuard .point{
+.securityGuard .showVideo{
     width: 750px;
     height: 466px;
     top: 150px;
@@ -134,6 +160,9 @@
     position:absolute;
     top: 50%;
     left: -1%;
+}
+.securityGuard .tag a{
+    display: inline-block;
 }
 .securityGuard .function{
     width: 380px;
@@ -185,7 +214,6 @@
     z-index: 0;
 }
 .securityGuard .illustrate{
-    display: flex;
     flex-direction: column;
     line-height: 2em;
     padding: 10px;
@@ -204,15 +232,40 @@
     line-height: 1.5em;
 
 }
+.securityGuard .illustrate h2::after{
+    content: '';
+    width: 62%;
+    display: inline-block;
+    border-top: 2px solid #bb0404;
+    position: relative;
+    top:-5px;
+    right: -10px;
+}
+
 .securityGuard .illustrate h3{
-    display: flex;
-    width: 110px;
+    display: inline-block;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 2px;
+    padding: 2px;
+    line-height: 30px;
     background-color: black;
     color: white;
 }
+.securityGuard .illustrate p{
+    text-indent: 1em;
+}
+.securityGuard .illustrate p::before{
+    content: '';
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    width: 0.2em;
+    height: 0.2em;
+    top:-0.3em;
+    left: -0.5em;
+}
+
 .comfortableRide{
     width: 1050px;
     height: 884px;
@@ -220,7 +273,7 @@
     margin: 50px auto;
     position: relative;
 }
-.comfortableRide .point{
+.comfortableRide .showVideo{
     width: 750px;
     height: 466px;
     top: 150px;
@@ -245,6 +298,9 @@
     position:absolute;
     top: 50%;
     right: -1%;
+}
+.comfortableRide .tag a{
+    display: inline-block;
 }
 .comfortableRide .function{
     width: 380px;
@@ -298,27 +354,52 @@
     background-color: #efefef;
     width: 720px;
     height: 280px;
-    line-height: 2em;
+    line-height: 1.5em;
     padding: 10px;
     position: relative;
     top: -146px;
     left: 60px;
     z-index: 3;
 }
+
 .comfortableRide .illustrate h2{
     font-size: x-large;
     font-weight:900;
     color: #bb0404;
     line-height: 1.5em;
 }
+.comfortableRide .illustrate h2::after{
+    content: '';
+    width: 62%;
+    display: inline-block;
+    border-top: 2px solid #bb0404;
+    position: relative;
+    top:-5px;
+    right: -10px;
+}
+
 .comfortableRide .illustrate h3{
-    display: flex;
-    width: 120px;
+    display: inline-block;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 2px;
+    padding: 2px;
+    line-height: 30px;
     background-color: black;
     color: white;
+}
+.comfortableRide .illustrate p{
+    text-indent: 1em;
+}
+.comfortableRide .illustrate p::before{
+    content: '';
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    width: 0.2em;
+    height: 0.2em;
+    top:-0.3em;
+    left: -0.5em;
 }
 .humanize{
     width: 1050px;
@@ -327,7 +408,7 @@
     margin: 100px auto;
     position: relative;
 }
-.humanize .point{
+.humanize .showVideo{
     width: 750px;
     height: 466px;
     top: 150px;
@@ -349,6 +430,9 @@
     position:absolute;
     top: 50%;
     left: -1%;
+}
+.humanize .tag a{
+    display: inline-block;
 }
 .humanize .function{
     width: 380px;
@@ -400,9 +484,8 @@
     z-index: 0;
 }
 .humanize .illustrate{
-    display: flex;
     flex-direction: column;
-    line-height: 2em;
+    line-height: 1.5em;
     padding: 10px;
     width: 720px;
     height: 170px;
@@ -419,14 +502,38 @@
     line-height: 1.5em;
 
 }
+.humanize .illustrate h2::after{
+    content: '';
+    width: 62%;
+    display: inline-block;
+    border-top: 2px solid #bb0404;
+    position: relative;
+    top:-5px;
+    right: -10px;
+}
+
 .humanize .illustrate h3{
-    display: flex;
-    width: 130px;
+    display: inline-block;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 2px;
+    padding: 2px;
+    line-height: 30px;
     background-color: black;
     color: white;
+}
+.humanize .illustrate p{
+    text-indent: 1em;
+}
+.humanize .illustrate p::before{
+    content: '';
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    width: 0.2em;
+    height: 0.2em;
+    top:-0.3em;
+    left: -0.5em;
 }
 .proud{
     width: 1050px;
@@ -435,7 +542,7 @@
     margin: 50px auto;
     position: relative;
 }
-.proud .point{
+.proud .showVideo{
     width: 750px;
     height: 466px;
     top: 150px;
@@ -460,6 +567,9 @@
     position:absolute;
     top: 50%;
     right: -1%;
+}
+.proud .tag a{
+    display: inline-block;
 }
 .proud .function{
     width: 380px;
@@ -526,14 +636,38 @@
     color: #bb0404;
     line-height: 1.5em;
 }
+.proud .illustrate h2::after{
+    content: '';
+    width: 62%;
+    display: inline-block;
+    border-top: 2px solid #bb0404;
+    position: relative;
+    top:-5px;
+    right: -10px;
+}
+
 .proud .illustrate h3{
-    display: flex;
-    width: 110px;
+    display: inline-block;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 2px;
+    padding: 2px;
+    line-height: 30px;
     background-color: black;
     color: white;
+}
+.proud .illustrate p{
+    text-indent: 1em;
+}
+.proud .illustrate p::before{
+    content: '';
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    width: 0.2em;
+    height: 0.2em;
+    top:-0.3em;
+    left: -0.5em;
 }
 
 
