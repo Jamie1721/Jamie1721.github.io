@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who am I</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .picturestyle {
+            width: 400px;
+            height: 300px;
+        }
+        .box {
+            width: auto;
+            border: 1px solid rebeccapurple;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .myInformation p {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="myInfo">
+            <div class="myPicture">
+                <img id="imge1" src="" alt="">
+            </div>
+            <div class="myInformation">
+                <p id="name"></p>
+                <p id="e-mail"></p>
+                <p id="school"></p>
+                <p id="interest"></p>
+            </div>
+        </div>
+
+        <div id="myIdol" class="myIdol">
+
+        </div>
+    </div>
+    <script>
+        let img = document.getElementById("imge1");
+        let myIdol = document.getElementById('myIdol');
+        const pictureUrl = "https://raw.githubusercontent.com/Jamie1721/FileStorage/5af902819248e3f282463a0abec330a7158334e9/TomandJarry.jpg";
+        img.src = pictureUrl;
+
+        let name = document.getElementById("name");
+        name.innerText = "姓名 : Jamie ";
+
+        let email = document.getElementById("e-mail");
+        email.innerText = "e-mail : a09888888@gmail.com";
+
+        let school = document.getElementById("school");
+        school.innerText = "school : 中華大學";
+
+        let interest = document.getElementById("interest");
+        interest.innerText = "interest : 你猜呀";
+
+        const imageArray = [
+            "https://www.musicmundial.com/en/wp-content/uploads/2022/03/BTS-V-shocks-on-Instagram-with-intense-flirting-with-a-fan.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-fVDwDGCQRykwaVCelXaJ0s1aO0ONYUTrw&usqp=CAU",
+            "https://a.ksd-i.com/a/2021-10-29/138179-922991.jpeg"
+        ];
+
+        imageArray.forEach((url, index) => {
+            // let url = item;
+            // document.write(url + "<br>");
+            myIdol.innerHTML += `<img src="${url}" class="picturestyle"> `;
+            //myIdol.innerText +=`<img src="${url}" class="picturestyle"> `;
+            //document.write(`<img src = ${url} class = "picturestyle"> `);
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
