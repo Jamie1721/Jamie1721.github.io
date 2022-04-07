@@ -1,0 +1,33 @@
+.area{
+    background-color: rgb(26, 20, 75);
+}
+.area .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.area .text div{
+    color: white;
+    font-size: 40px;
+    line-height: 1.5em;
+    margin: 20px;
+}
+.area .text a{
+    display: flex;
+    width: 330px;
+    height: 40px;
+    color: white;
+    font-size: larger;
+    justify-content: center;
+    background-color: blue;
+    line-height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+.area .pic{
+    width: 200px;
+}
+.area .pic img{
+    width: 100%;
+}

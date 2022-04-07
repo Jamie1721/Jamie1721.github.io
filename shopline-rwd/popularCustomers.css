@@ -1,0 +1,114 @@
+.popularCustomers{
+    padding: 40px 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.popularCustomers .title{
+    /* display: flex;
+    justify-content: center; */
+}
+.popularCustomers .title h5{
+    font-size: 38px;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.popularCustomers .title span{
+    color: blue;
+}
+.popularCustomers .brand-logo{
+    display: none;
+}
+.popularCustomers .item .pic img{
+    width: 100%;
+    vertical-align: top;
+}
+.popularCustomers .item .text{
+    margin: 20px 0;
+}
+.popularCustomers .item .text a{
+    text-decoration: none;
+    color: blue;
+}
+.popularCustomers .item .text .brand-content{
+    line-height: 1.8em;
+    margin: 30px 0 20px 0;
+}
+.popularCustomers .point{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.popularCustomers .point a{
+    display: flex;
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+.popularCustomers .point a i{
+    font-size: 10px;
+}
+@media screen and (min-width:768px) {
+    .popularCustomers .title h5{
+        text-align: center;
+    }
+    .popularCustomers .point{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .popularCustomers .point a{
+        padding: 0 50px;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .popularCustomers .brand-logo{
+        display: block;
+        margin: 10px 0;
+    }
+    .popularCustomers .brand-logo{
+        display: flex;
+        flex-direction: row;
+    }
+    .popularCustomers .brand-logo a{
+        display: flex;
+        width: 240px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .popularCustomers .brand-logo a img{
+        width: 30%;
+    }
+    .popularCustomers .item{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .popularCustomers .item .pic{
+        width: 60%;
+        padding-left: 40px;
+    }
+    .popularCustomers .item .text{
+        width: 40%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .popularCustomers .item .text .brand-content{
+        line-height: 1.8em;
+        margin: 0;
+    }
+    .popularCustomers .point{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .popularCustomers{
+        max-width: 1200px;
+    }
+    
+}
+
