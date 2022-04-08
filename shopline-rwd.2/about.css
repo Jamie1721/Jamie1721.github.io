@@ -1,0 +1,95 @@
+.about{
+    max-width: 1200px;
+}
+.about .item-grop{
+    margin: 0 10px;
+}
+.about .item-top .text{
+    text-align: center;
+}
+.about .item-top h3{
+    font-size: x-large;
+    font-weight:bolder;
+    line-height: 1.5em;
+}
+.about .item-top .title-info{
+    margin: 10px 0 30px;
+    line-height: 1.5em;
+    color: gray;
+}
+.about .item {
+    margin: 10px 0;
+}
+.about .item img{
+    width: 100%;
+    vertical-align: top;
+}
+.about .item .text h4{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 25px 0;
+}
+.about .item .text p{
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.about .item .text .list-item li{
+    margin: 15px 0;
+}
+.about .item .text .list-item li span{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    color: rgb(110, 137, 194);
+}
+.about .item .text .seemore{
+    margin: 30px 0;
+}
+.about .item .text .seemore a{
+    text-decoration: none;
+    color: blue;
+}
+@media screen and (min-width:768px) {
+    .about .text{
+        padding: 50px 0;
+    }
+    .about .item .text .list-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .item .text .list-item li{
+        width: 50%;
+        margin: 5px 0;
+    }
+}
+@media screen and (min-width:992px) {
+    .about .item-top .text .title-info{
+        width: 600px;
+        margin: auto;
+    }
+    .about .item{
+        display: flex;
+        flex-direction: row;
+    }
+    .about .item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .about .item .pic{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .about .item .text{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .about{
+        margin: auto;
+    }
+    .about .item-top .text .title-info{
+        width: 600px;
+        margin: auto;
+    }
+}
