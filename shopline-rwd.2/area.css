@@ -1,5 +1,9 @@
 .area{
+    height: 500px;
     background-color: rgb(26, 20, 75);
+    background-image: url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820");
+    background-repeat: no-repeat;
+    background-position: 70px 160px;
 }
 .area .text{
     display: flex;
@@ -25,9 +29,30 @@
     text-decoration: none;
 
 }
-.area .pic{
-    width: 200px;
+@media screen and (min-width:768px) {
+    .area{
+        height: 400px;
+        background-position: 200px 85px;
+    }
+    .area .text{
+        align-items: flex-start;
+    }  
+    .area .text div{
+        width: 40%;
+    }
 }
-.area .pic img{
-    width: 100%;
+@media screen and (min-width:992px) {
+    .area{
+        background-position: 600px 45px;
+    }
+    .area .text{
+        padding: 100px 0px 0px 0px;
+        align-items: flex-start;
+    }  
+    .area .text div{
+        width: 80%;
+    }
+    .area .text a{
+        margin: 10px;
+    }
 }
