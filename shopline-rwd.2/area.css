@@ -56,3 +56,9 @@
         margin: 10px;
     }
 }
+@media screen and (min-width:1200px) {
+    .area .text{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
