@@ -1,0 +1,21 @@
+@media screen and (max-width:767px) {
+    .container .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container .navbar-nav .nav-item{
+        width: 50%;
+
+    }
+}
+@media screen and (min-width:768px) {
+    .container .navbar-nav .nav-item a span{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+}
+

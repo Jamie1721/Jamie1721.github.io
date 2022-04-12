@@ -9,12 +9,281 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d929b7f2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bookstrap.css">
 
     <title>bookstrap</title>
 </head>
 
 <body>
-    
+    <header class="container-fluid ps-0 pe-0">
+        <div class="row-fluid" style="background-color:#7952b3;">
+            <nav class="navbar navbar-expand-md navbar-dark justify-content-between ">
+                <div class="container" style="max-width: 1200px;">
+                    <h1 class="d-flex justify-content-center mb-1">
+                        <a class="navbar-brand" href="#"><img
+                                src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
+                                style="width: 40px;height:25px object-fit;"></a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 flex-wrap flex-row mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Examples</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Blog</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="fa-brands fa-github"></i><span class="ps-3">Git
+                                        Hub</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="fa-brands fa-twitter"></i><span
+                                        class="ps-3">Twitter</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="fa-solid fa-bolt"></i><span class="ps-3">Slack</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="fa-brands fa-opera"></i><span class="ps-3">Open
+                                        collective</span></a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn btn-outline-warning " type="submit">Download</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <div class="banner ">
+        <div class="row ms-auto me-auto pt-5 pb-5" style="max-width: 1200px;">
+            <div class="item col-12 col-lg-7 col-xl-7 ps-2">
+                <div class="text pt-3 pe-3 pb-3">
+                    <h2>Examples</h2>
+                    <p>Quickly get a project started with any of our examples ranging from using parts of the framework
+                        to custom components and layouts.</p>
+                    <div class="d-flex flex-column flex-md-row">
+                        <button type="button" class="btn btn-lg text-white w-100 mb-2 mb-md-0 me-md-2 mb-lg-0 me-lg-2"
+                            style="background-color: #7952b3;">Download exemples</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg w-100 mt-2 mt-md-0 mt-lg-0 ">Download source
+                            code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pic col-12 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-md-start align-items-center">
+                <div class="row p-3 m-0" style="box-sizing: border-box; width: 350px;">
+                    <div class=" bg-light d-flex align-items-center w-50 col-8 col-md-8">
+                        <img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png"
+                            class="img-fluid rounded-start">
+                    </div>
+                    <div class="card-body bg-light col-4 col-md-4">
+                        <p class="card-text">Limited time offer: Get 10 free Adobe Stock images.</p>
+                        <p class="card-text"><small class="text-muted">ads via Carbon</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="row ms-auto me-auto" style="max-width: 1200px;">
+            <div class="col-12 col-md-12 p-2">
+                <h3>RTL</h3>
+                <p>See Bootstrap's RTL version in action with these modified Custom Components examples.</p>
+                <div class="card border border-4 border-bottom-0 border-top-0 border-end-0 border-warning">
+                    <div class="card-body">
+                        The RTL feature is still experimental and will probably evolve according to user feedback.
+                        Spotted something or have an improvement to suggest? Open an issue, we'd love to get your
+                        insights.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 mb-2">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 mb-2">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 mb-2">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=11" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 mb-2">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=0" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=19" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-bottom">
+        <div class="row ms-auto me-auto" style="max-width:1200px;">
+            <div class="col-12 p-2">
+                <h3>Integrations</h3>
+                <p>Integrations with external libraries.</p>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=9" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="ms-auto me-auto">
+    <div class="themes">
+        <div class="row ms-auto me-auto mt-2 mb-2" style="max-width: 1200px;">
+            <div class="col text-center">
+                <div class="card-body">
+                    <div class="fs-1"><i class="fa-solid fa-droplet"></i></div>
+                    <h5 class="card-title">Go further with Bootstrap Themes</h5>
+                    <p class="card-text">Need something more than these examples? Take Bootstrap to the next level with
+                        premium themes from the official Bootstrap Themes marketplace. They’re built as their own
+                        extended frameworks, rich with new components and plugins, documentation, and powerful build
+                        tools.</p>
+                    <a href="#" class="btn btn-outline-primary">Browse themes</a>
+                </div>
+            </div>
+        </div>
+        <div class="themes-img ms-auto me-auto d-flex justify-content-center" style="max-width: 1200px;">
+            <img src="https://getbootstrap.com/docs/5.1/assets/img/bootstrap-themes-collage.png" class="w-100">
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-fluid bg-light">
+        <div class="row ms-auto me-auto justify-content-end pt-3 pb-3" style="max-width: 1200px;">
+            <div class="col-12 col-lg-3 border-0 me-5 ">
+                <div class="card border-0 bg-light">
+                    <h4><span><i class="fa-brands fa-bootstrap text-dark"></i></span> Bootstrap</h4>
+                    <p>Designed and built with all the love in the world by the Bootstrap team with the help of our
+                        contributors.</p>
+                    <p>Code licensed MIT, docs CC BY 3.0.</p>
+                    <p>Currently v5.1.3.</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="card border-0 bg-light">
+                    <div class="fw-normal">Links</div>
+                    <ul class="p-0" style="list-style: none;">
+                        <li><a href="#" class="text-dark" style="text-decoration: none ;">Home</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;"> Docs</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Examples</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Themes</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="card border-0 bg-light">
+                    <div class="fw-normal">Guides</div>
+                    <ul class="p-0" style="list-style: none;">
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Getting started</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;"> Starter template</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Webpack</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Parcel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="card border-0 bg-light">
+                    <div class="fw-normal">Projects</div>
+                    <ul class="p-0" style="list-style: none;">
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Bootstrap 5</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Bootstrap 4</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Icons</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">npm starter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="card border-0 bg-light">
+                    <div class="fw-normal">Community</div>
+                    <ul class="p-0" style="list-style: none;">
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Issues</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Discussions</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Corporate sponsors</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Open Collective</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Slack</a></li>
+                        <li><a href="#" class="text-dark" style="text-decoration: none;">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
