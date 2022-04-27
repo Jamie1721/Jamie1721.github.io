@@ -78,6 +78,11 @@
             guess = document.querySelector('.guess');
             input = document.querySelector('.input');
             bigprocess = document.querySelector('.big-process');
+            reset.setAttribute('disabled', false);
+
+            see.setAttribute('disabled', true);
+            guess.setAttribute('disabled', true);
+            input.setAttribute('disabled', true);
 
             //按開始，產出四碼亂數
             start.addEventListener('click', () => {
@@ -93,7 +98,13 @@
                         ans.push(num);
                     }
                 }
-                start.setAttribute('disabled', false);
+                start.setAttribute('disabled', true);
+
+                reset.removeAttribute('disabled');
+                see.removeAttribute('disabled');
+                guess.removeAttribute('disabled');
+                input.removeAttribute('disabled');
+
 
             })
             //重新載入
