@@ -30,7 +30,8 @@
             width: fit-content;
 
         }
-        .title{
+
+        .title {
             font-size: 45px;
             text-align: center;
         }
@@ -92,13 +93,13 @@
                         ans.push(num);
                     }
                 }
-                start.setAttribute('disabled',false);
+                start.setAttribute('disabled', false);
 
             })
             //重新載入
             reset.addEventListener('click', () => {
                 location.reload();
-                start.setAttribute('disabled',true);
+                start.setAttribute('disabled', true);
 
             });
             //看答案 = 四碼亂數的值
@@ -107,7 +108,21 @@
 
             });
             //與ans陣列去跑是幾a幾b
-            guess.addEventListener("click",() => {
+            guess.addEventListener("click", () => {
+                let input_number = input.value
+                    .split('')
+                    .map(c => parseInt(c))
+                    ;
+                min = 0
+                max = 9
+                if (input_number.length != 4
+                    || new Set(input_number).size != 4
+                    || input_number.some(c => c < min || c > max)
+                ) {
+                    alert('請輸入 範圍內 四碼 不重複 數字');
+                    return
+                };
+
                 let a = 0;
                 let b = 0;
                 let inputArray = Array.from(input.value);
