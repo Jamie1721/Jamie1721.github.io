@@ -49,8 +49,8 @@
     </div>
     <script>
         let input_box, random, my_ans;
-        let m = 1;
-        let M = 200;
+        let m = 0;
+        let M = 100;
 
         window.onload = function () {
             let randombox = document.querySelector('.box');
@@ -79,7 +79,7 @@
             document.getElementById('btn_l').addEventListener('click', () => {
                 my_ans = parseInt(input_box.value);
 
-                if (my_ans > M) {
+                if (my_ans > M || my_ans < m) {
                     alert('請注意規則!');
                 }
                 else if (my_ans < random) {
