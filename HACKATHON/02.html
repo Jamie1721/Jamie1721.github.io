@@ -9,6 +9,12 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>計算機</title>
+    <style>
+        button{
+            width: calc(100% / 4 - 10px); 
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,48 +23,37 @@
             <div class="card ">
                 <input class="box border border-dark" style="height: 40px;"></input>
                 <div class="numberbox d-flex flex-wrap">
-                    <button type="button" id="1" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">1</button>
-                    <button type="button" id="2" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">2</button>
-                    <button type="button" id="3" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">3</button>
-                    <button type="button" id="12" class="btn btn-primary"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">+</button>
-                    <button type="button" id="4" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">4</button>
-                    <button type="button" id="5" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">5</button>
-                    <button type="button" id="6" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">6</button>
-                    <button type="button" id="13" class="btn btn-primary"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">-</button>
-                    <button type="button" id="7" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">7</button>
-                    <button type="button" id="8" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">8</button>
-                    <button type="button" id="9" class="btnAll btn-dark"
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">9</button>
-                    <button type="button" id="14" class="btn btn-primary"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">*</button>
-                    <button type="button" id="10" class="btnAll btn-dark "
-                        style="width: calc(100% / 4 - 10px); margin: 5px;">0</button>
-                    <button type="button" id="11" class="btn btn-dark "
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">.</button>
-                    <button type="button" id="16" class="btn btn-success"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">=</button>
-                    <button type="button" id="15" class="btn btn-primary"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">/</button>
-                    <button type="button" id="17" class="btn btn-danger"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;">C</button>
-                    <button type="button" id="18" class="btn btn-warning"
-                        style="width: calc(100% / 4 - 10px);margin: 5px;"> <- </button>
+                    <button type="button" id="1" class="btnAll btn-dark">1</button>
+                    <button type="button" id="2" class="btnAll btn-dark">2</button>
+                    <button type="button" id="3" class="btnAll btn-dark">3</button>
+
+                    <button type="button" id="12" class="btn btn-primary">+</button>
+
+                    <button type="button" id="4" class="btnAll btn-dark">4</button>
+                    <button type="button" id="5" class="btnAll btn-dark">5</button>
+                    <button type="button" id="6" class="btnAll btn-dark">6</button>
+
+                    <button type="button" id="13" class="btnAll btn-primary">-</button>
+
+                    <button type="button" id="7" class="btnAll btn-dark">7</button>
+                    <button type="button" id="8" class="btnAll btn-dark">8</button>
+                    <button type="button" id="9" class="btnAll btn-dark">9</button>
+
+                    <button type="button" id="14" class="btnAll btn-primary">*</button>
+
+                    <button type="button" id="10" class="btnAll btn-dark ">0</button>
+                    
+                    <button type="button" id="11" class="btn btn-dark ">.</button>
+                    <button type="button" id="16" class="btn btn-success">=</button>
+                    <button type="button" id="15" class="btnAll btn-primary">/</button>
+                    <button type="button" id="17" class="btn btn-danger">C</button>
+                    <button type="button" id="18" class="btn btn-warning"><- </button>
                 </div>
             </div>
         </div>
     </div>
     <script>
-        let input_box,buttonAll;
+        let input_box, buttonAll;
         let str;
 
         window.onload = function () {
@@ -66,39 +61,44 @@
             buttonAll = document.querySelectorAll('.btnAll');
             //按鈕
             buttonAll.forEach(btn => {
-                btn.addEventListener('click',()=>{
+                btn.addEventListener('click', () => {
                     input_box.value += btn.innerText;
 
                 })
             });
             let btn11 = document.getElementById('11');
             btn11.addEventListener('click', function (event) {
-                input_box.value += '0' + btn11.innerText;
+                if (input_box.value.length > 0 && !input_box.value.includes('.')) {
+                    input_box.value += btn11.innerText;
+                }
+                else if (input_box.value.length == 0) {
+                    input_box.value += '0' + btn11.innerText;
+                }
             })
             let btn12 = document.getElementById('12');
             btn12.addEventListener('click', function (event) {
                 input_box.value += btn12.innerText;
                 str = input_box.value;
-                input_box.value = " ";
+                input_box.value = "";
             })
             let btn13 = document.getElementById('13');
             btn13.addEventListener('click', function (event) {
                 input_box.value += btn13.innerText;
                 str = input_box.value;
-                input_box.value = " ";
+                input_box.value = "";
             })
             let btn14 = document.getElementById('14');
             btn14.addEventListener('click', function (event) {
                 input_box.value += btn14.innerText;
                 str = input_box.value;
-                input_box.value = " ";
+                input_box.value = "";
 
             })
             let btn15 = document.getElementById('15');
             btn15.addEventListener('click', function (event) {
                 input_box.value += btn15.innerText;
                 str = input_box.value;
-                input_box.value = " ";
+                input_box.value = "";
 
             })
             let btn16 = document.getElementById('16');
@@ -112,7 +112,7 @@
             })
             let btn18 = document.getElementById('18');
             btn18.addEventListener('click', function (event) {
-                input_box.value = input_box.value.substring(0,input_box.value.length-1);
+                input_box.value = input_box.value.substring(0, input_box.value.length - 1);
             })
 
 
