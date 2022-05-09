@@ -1,0 +1,30 @@
+
+[
+    {
+        "productName":"ipadAir",
+        "color":["太空灰色","粉紅色","紫色","藍色","星光色"],
+        "colorspicture":["./gray.png","./pink.jpeg","./purple.jpeg","./blue.jpeg","./starlight.jpeg"],
+        "picture":["./ipad-air-select-cell-spacegray.png","./ipad-air-select-cell-pink.png","./ipad-air-select-cell-purple.png","./ipad-air-select-cell-blue.png","./ipad-air-select-cell-starlight.png"],
+        "storage":["64GB","256GB"],
+        "network":["Wi-Fi","Cellular"],
+        "price":[17900,22900,27900]
+    },
+    {
+        "productName":"ipadMini",
+        "color":["太空灰色","粉紅色","紫色","星光色"],
+        "colorspicture":["./gray.png","./pink.jpeg","./purple.jpeg","./starlight.jpeg"],
+        "picture":["./ipad-mini-wifi-space-gray.png","./ipad-mini-pink.png","./ipad-mini-purple.png","./ipad-mini-starlight.png"],
+        "storage":["64GB","256GB"],
+        "network":["Wi-Fi","Cellular"],
+        "price":[14900,19400,2900]
+    },
+    {
+        "productName":"ipad",
+        "color":["太空灰色","銀色"],
+        "colorspicture":["./gray.png","./silver.png"],
+        "picture":["./IPAD-spacegray_PIC_.jpg","./IPAD-sliver_PIC.jpg"],
+        "storage":["64GB","256GB"],
+        "network":["Wi-Fi","Cellular"],
+        "price":[10500,14500,15000,19000]
+    }
+]
