@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/896690462a.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+    <style>
+        .menu-fixed {
+            background-color: #000;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .w-1200 {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .menu-btn {
+            width: 100px;
+        }
+
+        .mulu-row .card {
+            width: 150px;
+        }
+
+        .mulu-md-row .card {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .mulu-row .card-body {
+            padding: 0;
+        }
+
+        .offcanvas-width {
+            width: 300px;
+        }
+
+        .user p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            margin: auto 15px;
+            padding: 0px;
+        }
+
+        .leval {
+            border-radius: 30px;
+            background: #F00;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .text p {
+            max-width: 800px;
+            box-sizing: border-box;
+            margin: auto 20px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn_icon {
+            background-color: #fff;
+            border-radius: 30px;
+            margin: 10px 10px;
+        }
+
+        .more_function {
+            width: 50%;
+            position: fixed;
+            bottom: 0%;
+        }
+
+        .comic_content{
+            height: 95vh;
+            width: 100%;
+            overflow-y:scroll;
+        }
+
+        .comic_content img {
+            width: 500px;
+            height: 700px;
+        }
+
+        .comic_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+
+
+        @media screen and (max-width:768px) {
+            .text p {
+                max-width: 350px;
+                margin: auto;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+
+            .more_function {
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+            }
+
+            .comic_content img {
+                width: 70%; 
+                height: 80%;
+            }
+
+            .comic_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- 漫畫區 -->
+    <div class="container-fluid bg-dark d-flex comic_area">
+        <button class="btn text-decoration-none my-2" href="#">
+            <i class="fa-solid fa-arrow-left-long text-white"></i>
+        </button>
+        <div class="comic_text flex-grow-1 my-2 m-auto">
+            <p class="text-white  m-0 ">第一話</p>
+        </div>
+    </div>
+    <div class="comic">
+        <div class="col-12  d-flex flex-column align-items-center comic_content">
+            <!-- <img id="comicpic_pic" src="https://picsum.photos/500/700/?random=11" class="  text-center">
+            <img id="comicpic_pic" src="https://picsum.photos/500/700/?random=11" class="  text-center">
+            <img id="comicpic_pic" src="https://picsum.photos/500/700/?random=11" class="  text-center">
+            <img id="comicpic_pic" src="https://picsum.photos/500/700/?random=11" class="  text-center"> -->
+            <template id="comicpic">
+                <img id="comicpic_pic" src="https://picsum.photos/500/700/?random=11" class="  text-center">
+            </template>
+        </div>
+    </div>
+
+    <!-- 評論區 -->
+    <div class="container  bg-dark comment_text">
+        <!-- <div class="comment_text  m-auto">
+        </div> -->
+    </div>
+
+    <!-- 各種按鈕 -->
+    <div class="footer d-flex flex-column justify-content-center align-items-center my-2">
+
+        <div class="rounded-pill bg-dark text-center text-white  fs-2 more_function">
+            <button class="btn btn_last text-white">
+                <i class="fa-solid fa-arrow-left py-3 mx-2 "></i>
+                <!-- 上一話 -->
+            </button>
+            <button class="btn btn_play text-white">
+                <i class="fa-solid fa-person-running mx-2 py-3"></i>
+                <!-- 自動播放 -->
+            </button>
+            <!-- 目錄 -->
+            <button class="btn btn-dark menu-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" id="muluBTN">
+                <i class="fa-solid fa-list mx-2 py-3"></i>
+            </button>
+            <button class="btn btn-dark menu-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="mulu-mdBTN"><i
+                    class="fa-solid fa-list mx-2 py-3"></i></button>
+
+
+            <button class="btn btn_comment text-white">
+                <i class="fa-solid fa-comment-dots py-3 mx-2"></i>
+                <!-- 留言 -->
+            </button>
+
+            <button class="btn btn_next text-white">
+                <i class="fa-solid fa-arrow-right-long py-3 mx-2"></i>
+                <!-- 下一話 -->
+            </button>
+        </div>
+    </div>
+
+    <!-- 目錄區 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">話次目錄</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small ">
+            <div class="row flex-nowrap mulu-row">
+                <template id="mulutemplate">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/300/200/?random=10" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-title">第1話</span>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start offcanvas-width" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">話次目錄</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row row-cols-1 flex-wrap mulu-md-row">
+            </div>
+        </div>
+    </div>
+
+    <!-- 評論區模板 -->
+    <template id="comment">
+        <!-- 回到首頁的案紐 -->
+        <button class="btn text-decoration-none my-2" href="#">
+            <i class="fa-solid fa-arrow-left-long text-white"></i>
+        </button>
+        <div class="comment_text  m-auto">
+            <div class="row  mt-2 ">
+                <div class="user  d-flex ">
+                    <span class="leval border-danger  text-white">BEST</span>
+                    <p class="username  text-white">凍豆腐</p>
+                </div>
+                <div class="text">
+                    <p class="text-white ">
+                        古代事業士兵烏日是因為，圍繞商品迅速很快突破似乎對你模式進一步人們手裡，暴力網頁班美元財政是怎麼想法指導屬性隨着算是民主自信另外，病人衛生工廠，總是行業聯繫最。</p>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-thumbs-up "></i>
+                        讚
+                        <span class="count">1.9k</span>
+                    </button>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-reply-all"></i>
+                        回覆
+                        <span class="count">66</span>
+                    </button>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        檢舉
+                        <span class="count">10</span>
+                    </button>
+                </div>
+            </div>
+            <hr class="text-white">
+            <div class="row  mt-2 ">
+                <div class="user  d-flex ">
+                    <span class="leval border-danger  text-white">BEST</span>
+                    <p class="username  text-white">凍豆腐</p>
+                </div>
+                <div class="text">
+                    <p class="text-white ">
+                        古代事業士兵烏日是因為，圍繞商品迅速很快突破似乎對你模式進一步人們手裡，暴力網頁班美元財政是怎麼想法指導屬性隨着算是民主自信另外，病人衛生工廠，總是行業聯繫最。</p>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-thumbs-up "></i>
+                        讚
+                        <span class="count">1.9k</span>
+                    </button>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-reply-all"></i>
+                        回覆
+                        <span class="count">66</span>
+                    </button>
+                    <button class="btn btn_icon">
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        檢舉
+                        <span class="count">10</span>
+                    </button>
+                </div>
+            </div>
+            <hr class="text-white">
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        let comic_content = document.querySelector(".comic_content");
+        let btn_last = document.querySelector(".btn_last");
+        let comicpic = document.querySelector("#comicpic");
+        let btn_next = document.querySelector(".btn_next");
+        let btn_comment = document.querySelector(".btn_comment");
+        let cloneContent = comicpic.content.cloneNode(true);
+        let mulu_row = document.querySelector('.mulu-row')
+        let muluTemplate = document.querySelector('#mulutemplate')
+        let mulu_btn = document.querySelector('#muluBTN')
+        let mulu_md_btn = document.querySelector('#mulu-mdBTN')
+        let mulu_md_row = document.querySelector('.mulu-md-row')
+
+        let  scrollId, comic_content_Height;
+        
+
+        let more_function = document.querySelector('.more_function');
+
+
+        //自動撥放按鈕
+        let btn_play = document.querySelector('.btn_play')
+
+        window.onload = function () {
+
+            for (let index = 1; index <= 30; index++) {
+                comic_content.appendChild(getClonepic(index))
+            }
+
+            //目錄按鈕
+            comic_content.addEventListener("click", () => {
+                more_function.style.display = "block"
+                clearInterval(scrollId);
+            })
+
+            window.addEventListener('mousewheel', () => {
+                more_function.style.display = "none"
+            })
+
+            //上一頁按鈕
+            btn_last.addEventListener("click", () => {
+                comic_content.innerText = "";
+                comic_content.appendChild(cloneContent)
+            })
+            //下一頁按鈕
+            btn_next.addEventListener("click", () => {
+                comic_content.innerText = "";
+                comic_content.appendChild(cloneContent)
+            })
+            //留言
+            btn_comment.addEventListener("click", () => {
+                let container_fluid = document.querySelector(".comic_area");
+                let comic = document.querySelector(".comic");
+                let body = document.querySelector("body");
+                let comment_text = document.querySelector(".comment_text")
+                body.classList.add("bg-dark")
+                comic.innerText = "";
+                container_fluid.innerText = "";
+                comment_text.innerText = "";
+                let cloneContent = comment.content.cloneNode(true);
+                // let more_function = document.querySelector(".more_function")
+                comment_text.append(cloneContent)
+                // let back=document.querySelector(".btn text-decoration-none my-2")
+                // //返回按鈕
+                // back.addEventListener("click",()=>{
+                //     history.go(-1);
+                // })
+            })
+
+
+            //--------------------------------------------------
+            
+            
+            //自動播放
+            btn_play.addEventListener("click", () => {
+
+                comic_content_Height = window.getComputedStyle(comic_content).getPropertyValue("height");
+
+                comic_content_Height = parseInt(comic_content_Height);
+
+                //自動捲動
+                scrollId = setInterval(scroll ,10);
+
+                function scroll() {
+                    if (comic_content.scrollTop + comic_content_Height < comic_content.scrollHeight) {
+                        //向下捲動
+                        comic_content.scrollTop++;
+                        console.log(comic_content.scrollTop)
+                    }
+    
+                // else {
+                //     //捲到底
+                //     window.clearInterval(scrollId);
+                //     alert("捲到底囉");
+                // }
+                }
+            });
+
+
+            //--------------------------------------------------
+
+
+        //目錄
+            window.addEventListener('resize', () => {
+                muluBtnHidden();
+            })
+            muluBtnHidden();
+            for (let i = 1; i <= 30; i++) {
+                mulu_row.appendChild(getCloneMULU(i))
+                mulu_md_row.appendChild(getCloneMULU(i))
+            }
+        }
+
+
+        function muluBtnHidden() {
+            var screenWidth = window.screen.width;
+            if (screenWidth < 768) {
+                mulu_btn.style.display = "inline-block";
+                mulu_md_btn.style.display = "none";
+            }
+            else {
+                mulu_btn.style.display = "none";
+                mulu_md_btn.style.display = "inline-block";
+            }
+        }
+
+
+        function getClonepic(index) {
+            let cloneCard = comicpic.content.cloneNode(true);
+            cloneCard.querySelector('img').src = `https://picsum.photos/300/200/?random=${index}`
+            return cloneCard;
+        }
+
+        function getCloneMULU(index) {
+            let cloneCard = muluTemplate.content.cloneNode(true);
+            cloneCard.querySelector('img').src = `https://picsum.photos/300/200/?random=${index}`
+            cloneCard.querySelector('.card-title').innerHTML = `第${index}話`
+            return cloneCard;
+        }
+
+    </script>
+</body>
+
+</html>
