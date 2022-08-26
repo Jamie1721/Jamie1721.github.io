@@ -4,8 +4,8 @@
     --content-title-color :rgb(255, 255, 255);
     --content-small-color:white;
 }
-body{
-    /* overflow: hidden; */
+.row{
+    --bs-gutter-x: 0 rem;
 }
 a{
     text-decoration: none;
@@ -176,12 +176,11 @@ a{
     list-style: none;
     margin: 5px;
     text-align: center;
-}
-.main_comics_episode .comics_episode .illustrate_box ul li a{
     color: var(--content-small-color);
     padding:0px 10px;
+
 }
-.main_comics_episode .comics_episode .illustrate_box ul li a:hover{
+.main_comics_episode .comics_episode .illustrate_box ul li:hover{
     color: black;
     background-color: white;
     border-radius: 30px;
@@ -259,6 +258,22 @@ a{
 .left_row .col a:hover{
     color: rgb(71, 61, 61);
 }
+.ep_card{
+    height: fit-content;
+}
+.big_video{
+    position: absolute;
+    left: 350px;
+    top:100px;
+    width: 1000px;
+}
+.local_video_bg{
+    width: 100%;
+}
+.big_close{
+    position: relative;
+    right: -0px;
+}
 @media screen and (min-width:1200px) {
     .hearder_nav i{
         color: white;
@@ -276,6 +291,7 @@ a{
         display: block;
         margin: 10px;
     }
+    
     
 
 }

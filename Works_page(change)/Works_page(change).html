@@ -18,7 +18,7 @@
     <header class="hearder_nav w-100">
         <a class="previous_page_a" href="#"><i class="fa-solid fa-arrow-left-long previous_page"></i></a>
         <div class="function_box">
-            <label class="collect_a" for="heart" href="#" ><i class="red fa-solid fa-heart"></i></label>
+            <label class="collect_a" for="heart" href="#"><i class="red fa-solid fa-heart"></i></label>
             <input type="checkbox" class="d-none" id="heart">
             <a class="share_a" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i
                     class="fa-solid fa-comment-dots message"></i></a>
@@ -31,27 +31,31 @@
                     <div class="read_ticket">閱讀券1張</div>
                     <div class="seven_free">每7日免費看</div>
                 </div>
-                <video title="SSS級死而復生的獵人" class="object-contain w-full h-full pointer-events-auto" playsinline="" poster="https://tw-a.kakaopagecdn.com/P/C/96/c1a/2x/f481dbdc-3c61-4c70-bedc-4150a22d54ad_f~os.w.png" disableremoteplayback="" style="width: calc(100vw - 80px); max-width: 355px;"><source src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.webm" type="video/webm"><source src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.mov" type="video/quicktime"></video>
-
-               <!--  <video  style="width: calc(100vw - 80px); max-width: 355px;" autoplay tabindex="0" muted="ture" class="local_video" playsinline src="https://Jamie1721.github.io/Works_page(change)/webvideo.webm" type="video/webm"> -->
-                    <!-- <source src="https://Jamie1721.github.io/Works_page(change)/webvideo.webm" type="video/webm"> -->
-                    <!-- <source src="https://tw-a.kakaopagecdn.com/P/C/206/c1a/349781d6-bdf6-4eb3-a73a-abcccc9f9fec.webm"  type="video/webm" playsinline> -->
+                <video title="SSS級死而復生的獵人" autoplay="autoplay" muted="ture"
+                    class="local_video object-contain w-full h-full pointer-events-auto">
+                    <!-- <source src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.webm"
+                        type="video/webm">
+                    <source src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.mov"
+                        type="video/quicktime"> -->
                 </video>
             </div>
         </div>
         <div class="comics_name_bg">
             <div class="comics_box mx-auto">
                 <a class="comics_name_click" href="#">
-                    <!-- <div class="comics_name">
+                    <div class="comics_name">
                         <h1>骨灰級菜鳥玩家</h1>
                         <p><span>原著</span> BONIEE,Step on a LEGO</p>
                         <p><span>發行</span> REDICE STUDIO</p>
-                        <div class="comics_category">
-                            <p class="category"><span><i class="fa-solid fa-bars-staggered"></i></span>動作冒險</p>
-                            <p class="whatch"><span><i class="fa-regular fa-eye"></i></span> 843.9K</p>
-                            <p class="good"><span><i class="fa-regular fa-thumbs-up"></i></span> 82.1K</p>
+                        <div class="comics_category ">
+                            <span><i class="fa-solid fa-bars-staggered"></i></span>
+                            <p class="category d-flex align-items-center">動作冒險</p>
+                            <span><i class="fa-regular fa-eye"></i></span>
+                            <p class="whatch d-flex align-items-center"> 843.9K</p>
+                            <span><i class="fa-regular fa-thumbs-up"></i></span>
+                            <p class="good d-flex align-items-center"> 82.1K</p>
                         </div>
-                    </div> -->
+                    </div>
                 </a>
                 <div class="play_tidy_box">
                     <div class="play btn btn-light"><i class="fa-regular fa-circle-play"></i></div>
@@ -64,35 +68,148 @@
                 </div>
             </div>
         </div>
-
+        <div class="big_video">
+            <button class="big_close btn btn-danger d-none">關閉</button>
+            <video title="" preload="auto" muted="ture" class="local_video_bg object-contain pointer-events-auto   d-none">
+                <source src="https://tw-a.kakaopagecdn.com/P/C/117/ip2/6354ea16-7d44-40ff-964f-8188a8e637cb.webm" type="video/webm">
+            </video>
+        </div>
     </banner>
     <section class="main_comics_episode w-100 ">
         <div class="comics_episode ">
             <div class="row mx-auto">
-                <nav class="illustrate_box">
+                <div class="illustrate_box">
                     <ul>
-                        <li><a class="ep" href="#">話次</a></li>
-                        <li><a class="illustrate" href="#">作品資訊</a></li>
-                        <li><a class="messages" href="#">留言</a></li>
+                        <li class="ep"><a class="" href="#"></a>話次</li>
+                        <li class="illustrate"><a class="" href="#"></a>作品資訊</li>
+                        <li class="messages"><a class="" href="#"></a>留言</li>
                     </ul>
-                </nav>
+                </div>
                 <div class="keep_reading_box">
                     <a href="#">
                         <p class="keep_reading"><span>繼續看</span>序章</p>
                     </a>
                 </div>
                 <div class="left_row col-12 col-lg-8 col-xl-8">
-
+                    <div class="bigbig w-100 d-flex flex-wrap">
+                        <div class="ep_card col col-6 col-md-4 col-lg-3 col-xl-2">
+                            <a class="" href="#">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="https://picsum.photos/300/200/?random=64" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ep_card col col-6 col-md-4 col-lg-3 col-xl-2">
+                            <a class="" href="#">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="https://picsum.photos/300/200/?random=64" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ep_card col col-6 col-md-4 col-lg-3 col-xl-2">
+                            <a class="" href="#">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="https://picsum.photos/300/200/?random=64" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ep_card col col-6 col-md-4 col-lg-3 col-xl-2">
+                            <a class="" href="#">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="https://picsum.photos/300/200/?random=64" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mobile_title_box p-3 d-none">
+                            <h2 class="mo_ti fw-bolder">骨灰級菜鳥玩家</h2>
+                            <div class="ill_box">
+                                <div><span>文</span>
+                                    <p class="mo_word"> BONIEE</p>
+                                </div>
+                                <div><span>圖</span>
+                                    <p class="mo_pic"> BONIEE</p>
+                                </div>
+                                <div><span>原著</span>
+                                    <p class="mo_author"> BONIEE,Step on a LEGO</p>
+                                </div>
+                                <div><span>發行</span>
+                                    <p class="mo_publisher"> REDICE STUDIO</p>
+                                </div>
+                            </div>
+                            <div class="story_box mt-5">
+                                <h3>故事大綱</h3>
+                                <p>這款遊戲將在15年後終止服務，只有我知道遊戲的結局。「我是骨灰及玩家。」</p>
+                            </div>
+                            <div class="keywords_box mt-5">
+                                <h4 class="mb-3">關鍵字</h4>
+                                <div>
+                                    <p>#刺激緊張</p>
+                                    <p>#瘋狂</p>
+                                    <p>#動作冒險</p>
+                                    <p>#改變命運</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-xl-4">
                     <div class="comics_illustrate">
                         <p>這款遊戲將在15年後終止服務，只有我知道遊戲的結局。「我是骨灰及玩家。」</p>
                     </div>
                 </div>
+                <div class="comment_text  mx-auto d-none">
+                    <div class="row p-4">
+                        <div class="user  d-flex ">
+                            <span class="leval border-danger  text-white">BEST</span>
+                            <p class="username  text-white">凍豆腐</p>
+                        </div>
+                        <div class="text">
+                            <p class="text-white ">
+                                古代事業士兵烏日是因為，圍繞商品迅速很快突破似乎對你模式進一步人們手裡，暴力網頁班美元財政是怎麼想法指導屬性隨着算是民主自信另外，病人衛生工廠，總是行業聯繫最。</p>
+                            <button class="btn btn_icon">
+                                <i class="fa-solid fa-thumbs-up "></i>
+                                讚
+                                <span class="count">1.9k</span>
+                            </button>
+                            <button class="btn btn_icon">
+                                <i class="fa-solid fa-reply-all"></i>
+                                回覆
+                                <span class="count">66</span>
+                            </button>
+                            <button class="btn btn_icon">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                檢舉
+                                <span class="count">10</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
     </section>
+    <template id="View_template">
+        <source class="webm" src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.webm"
+            type="video/webm">
+        <source class="mov" src="https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.mov"
+            type="video/quicktime">
+    </template>
     <template id="title_template">
         <div class="comics_name">
             <h1 class="title">骨灰級菜鳥玩家</h1>
@@ -114,10 +231,18 @@
         <div class="mobile_title_box p-3">
             <h2 class="mo_ti fw-bolder">骨灰級菜鳥玩家</h2>
             <div class="ill_box">
-                <div><span>文</span><p class="mo_word"> BONIEE</p></div>
-                <div><span>圖</span><p class="mo_pic"> BONIEE</p></div>
-                <div><span>原著</span><p class="mo_author"> BONIEE,Step on a LEGO</p></div>
-                <div><span>發行</span><p class="mo_publisher"> REDICE STUDIO</p></div>
+                <div><span>文</span>
+                    <p class="mo_word"> BONIEE</p>
+                </div>
+                <div><span>圖</span>
+                    <p class="mo_pic"> BONIEE</p>
+                </div>
+                <div><span>原著</span>
+                    <p class="mo_author"> BONIEE,Step on a LEGO</p>
+                </div>
+                <div><span>發行</span>
+                    <p class="mo_publisher"> REDICE STUDIO</p>
+                </div>
             </div>
             <div class="story_box mt-5">
                 <h3>故事大綱</h3>
@@ -163,7 +288,7 @@
             </div>
         </div>
     </template>
-    <template id="ep_card">
+    <!-- <template id="ep_card">
         <div class="col col-6 col-md-4 col-lg-3 col-xl-2">
             <a class="" href="#">
                 <div class="card w-100" style="width: 18rem;">
@@ -175,7 +300,7 @@
                 </div>
             </a>
         </div>
-    </template>
+    </template> -->
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -203,7 +328,23 @@
         crossorigin="anonymous"></script>
     <script>
         let main_picture, main_comics_episode, local_video, collect_a, tidy, tidy_r, comics_episode, ep, illustrate, messages;
-        let ep_template, left_row, title_template, comics_name_click,moble_title_template;
+        let ep_template, left_row, title_template, comics_name_click, moble_title_template, View_template, mobile_title_box, ep_card, comment_text;
+        let bigbig;
+        function test() {
+            let screen = window.screen.width;
+            console.log(screen)
+            window.addEventListener('resize', () => {
+                if (screen <= 768) {
+                }
+                else if (screen > 768) {
+                    left_row.innerText = "";
+                    left_row.appendChild(bigbig);
+                    console.log('///')
+                }
+            })
+
+        }
+
         window.onload = function () {
             ep = document.querySelector('.ep');
             illustrate = document.querySelector('.illustrate');
@@ -212,43 +353,51 @@
             collect_a = document.querySelector('.red');
             comics_name_click = document.querySelector('.comics_name_click');
             left_row = document.querySelector('.left_row');
+            local_video = document.querySelector('.local_video');
+            mobile_title_box = document.querySelector('.mobile_title_box');
+            ep_card = document.querySelector('.ep_card');
+            comment_text = document.querySelector('.comment_text');
+            bigbig = document.querySelector('.bigbig');
+            let play = document.querySelector('.play');
+            let local_video_bg = document.querySelector('.local_video_bg');
+            let big_close = document.querySelector('.big_close');
 
-            epCloned();
+            play.addEventListener('click',()=>{
+                local_video_bg.classList.remove('d-none');
+                big_close.classList.remove('d-none');
+            })
+            big_close.addEventListener('click',() =>{
+                local_video_bg.close();
+            })
 
-            let screen = window.screen.width;
-            console.log(screen)
-            window.addEventListener('resize',() =>{
-                if(screen <= 768){
-                }
-                else if(screen > 768)
-                {
-                    left_row.innerText ="";
-                    epCloned();
-                    console.log('///')
-                }
-            })    
+
+            ////View_cloned
+            View_template = document.querySelector('#View_template');
+            local_video.appendChild(getView('https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.webm', 'https://tw-a.kakaopagecdn.com/P/C/96/c1a/f481dbdc-3c61-4c70-bedc-4150a22d54ad.mov'));
+
+            test();
             ////(手機)選單
             //話次
-            // ep = document.querySelector('.ep');
             ep.addEventListener('click', () => {
                 console.log('1')
                 left_row.innerText = "";
-                epCloned();
+                left_row.appendChild(bigbig);
             })
             //作品資訊
-            // illustrate = document.querySelector('.illustrate');
             illustrate.addEventListener('click', () => {
                 console.log('2')
                 left_row.innerText = "";
-                left_row.appendChild(mobleCloned('骨灰級菜鳥玩家','BONIEE','BONIEE','BONIEE,Step on a LEGO','REDICE STUDIO'))
+                mobile_title_box.classList.remove('d-none');
+                mobile_title_box.classList.add('d-block');
+                left_row.appendChild(mobile_title_box);
             })
             //留言
-            // messages = document.querySelector('.messages');
             messages.addEventListener('click', () => {
                 console.log('3')
                 left_row.innerText = "";
-                let cloneContent = comment.content.cloneNode(true);
-                left_row.appendChild(cloneContent);
+                comment_text.classList.remove('d-none');
+                comment_text.classList.add('d-block');
+                left_row.appendChild(comment_text);
             })
             ////點擊影片，影片開始播放。
             // local_video = document.querySelector('.local_video');
@@ -259,37 +408,44 @@
             // collect_a = document.querySelector('.red');
             let check = document.querySelector('#heart');
             collect_a.addEventListener('click', () => {
-                if(!check.checked){
+                if (!check.checked) {
                     console.log('111')
                     collect_a.classList.add('text-danger');
                 }
-                else{
+                else {
                     console.log('222')
                     collect_a.classList.remove('text-danger');
                 }
             })
-            ////title_cloned
-            title_template = document.querySelector('#title_template');
-            // comics_name_click = document.querySelector('.comics_name_click');
-            //抓資料庫...
-            comics_name_click.appendChild(getTitle('骨灰級菜鳥玩家', 'BONIEE,Step on a LEGO', 'REDICE STUDIO', '動作冒險', '843.9K', '82.1K'))
-            ////
-            function getTitle(title, author, publisher, category, whatch, good) {
-                let cloneTitle = title_template.content.cloneNode(true);
-                cloneTitle.querySelector(".title").innerText = title;
-                cloneTitle.querySelector(".author").innerText = author;
-                cloneTitle.querySelector(".publisher").innerText = publisher;
-                cloneTitle.querySelector(".category").innerText = category;
-                cloneTitle.querySelector(".whatch").innerText = whatch;
-                cloneTitle.querySelector(".good").innerText = good;
-                return cloneTitle;
+
+            function getView(imgUrl, imgUrlMov) {
+                let cloneView = View_template.content.cloneNode(true);
+                cloneView.querySelector(".webm").src = imgUrl;
+                cloneView.querySelector(".mov").src = imgUrlMov;
+                return cloneView;
             }
-            ////moble_title_cloned
-            function moble_title(){
-                
-            }
+            // ////title_cloned
+            // title_template = document.querySelector('#title_template');
+            // // comics_name_click = document.querySelector('.comics_name_click');
+            // //抓資料庫...
+            // comics_name_click.appendChild(getTitle('骨灰級菜鳥玩家', 'BONIEE,Step on a LEGO', 'REDICE STUDIO', '動作冒險', '843.9K', '82.1K'))
+            // ////
+            // function getTitle(title, author, publisher, category, whatch, good) {
+            //     let cloneTitle = title_template.content.cloneNode(true);
+            //     cloneTitle.querySelector(".title").innerText = title;
+            //     cloneTitle.querySelector(".author").innerText = author;
+            //     cloneTitle.querySelector(".publisher").innerText = publisher;
+            //     cloneTitle.querySelector(".category").innerText = category;
+            //     cloneTitle.querySelector(".whatch").innerText = whatch;
+            //     cloneTitle.querySelector(".good").innerText = good;
+            //     return cloneTitle;
+            // }
+            // ////moble_title_cloned
+            // function moble_title() {
+
+            // }
             moble_title_template = document.querySelector('#motle_title');
-            function mobleCloned(title,mo_word,mo_pic,mo_author,mo_publisher){
+            function mobleCloned(title, mo_word, mo_pic, mo_author, mo_publisher) {
                 let cloneMoble = moble_title_template.content.cloneNode(true);
                 cloneMoble.querySelector(".mo_ti").innerText = title;
                 cloneMoble.querySelector(".mo_word").innerText = mo_word;
@@ -298,14 +454,14 @@
                 cloneMoble.querySelector(".mo_publisher").innerText = mo_publisher;
                 return cloneMoble;
             }
-            ////話次cloned
-            function epCloned(){
-                ep_template = document.querySelector('#ep_card');
-                // left_row = document.querySelector('.left_row');
-                for (let i = 1; i <= 50; i++) {
-                    left_row.appendChild(getCard(`第${i}話`, `https://picsum.photos/300/200/?random=${i}`, `2022/06/${i.toString().padStart(2, "0")}`));
-                }
-            }
+            // ////話次cloned
+            // function epCloned() {
+            //     ep_template = document.querySelector('#ep_card');
+            //     // left_row = document.querySelector('.left_row');
+            //     for (let i = 1; i <= 50; i++) {
+            //         left_row.appendChild(getCard(`第${i}話`, `https://picsum.photos/300/200/?random=${i}`, `2022/06/${i.toString().padStart(2, "0")}`));
+            //     }
+            // }
             function getCard(title, imgurl, content) {
                 let cloneCard = ep_template.content.cloneNode(true);
                 cloneCard.querySelector("img").src = imgurl;
@@ -354,19 +510,20 @@
 
             //     }
             // }).scroll()
-            window.addEventListener('mousewheel', (event) => {
-                event = event || window.event;
-                if (event.wheelDelta > 0 || event.detail < 0) {
-                    //向上滾
-                    $('html, body').animate({ scrollTop: 0 }, "fast")
-                }
-                else {
-                    //向下滾
-                    $('html, body').animate({
-                        scrollTop: $('.comics_episode').offset().top
-                    }, "fast")
-                }
-            })
+
+            // window.addEventListener('mousewheel', (event) => {
+            //     event = event || window.event;
+            //     if (event.wheelDelta > 0 || event.detail < 0) {
+            //         //向上滾
+            //         $('html, body').animate({ scrollTop: 0 }, "fast")
+            //     }
+            //     else {
+            //         //向下滾
+            //         $('html, body').animate({
+            //             scrollTop: $('.comics_episode').offset().top
+            //         }, "fast")
+            //     }
+            // })
         }
     </script>
 </body>
