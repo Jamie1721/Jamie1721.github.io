@@ -55,6 +55,9 @@ header{
     flex-grow: 1;
     margin-left: 50px;
 }
+.main-nav li{
+    list-style: none;
+}
 .main-nav .list-item{
     text-decoration: none;
     color: black;
